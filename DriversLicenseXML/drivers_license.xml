@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Format for comments in XML is same as HTML -->
+<!--this comment is below the line it is referencing because apparently, the XML declaration MUST be on the first line. -->
+<!--The   ?   symbol tells the parser that this is a processing instruction and NOT part of the XML document. -->
+<!--Looks like the first part - <?xml - tells the parser that this is an XML specification and not a style sheet.  Not sure why important?-->
+<!-- looks like   version   and   encoding   are just attributes, and the ?xml is the non-negotiable part.  -->
+<!-- Looks like   standalone   tells the parser whether this requires any external documents to be parsed.  Default value is no, which means that this can use external documents like xml schema or xml stylesheets. -->
+
+<driversLicense status="suspended">
+    <number>12345</number>
+    <firstName>Tom</firstName>
+    <lastName>Mitchell</lastName>
+    <dateOfBirth>08/05/1983</dateOfBirth>
+    <vehicleType>Car</vehicleType>
+    <dateOfIssue>01/01/2016</dateOfIssue>
+    <dateOfExpiry>01/01/2026</dateOfExpiry>
+    <photo location="servername/filename"></photo>
+</driversLicense>
