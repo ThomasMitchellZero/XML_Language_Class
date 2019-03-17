@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<userProfile>
+    <!--Here's a comment-->
+    <firstName>Thomas&amp;Riley</firstName>
+    <lastName>Mitchell</lastName>
+    <![CDATA[ See the data?  & the characters? ]]>
+    <password>12345</password>
+    <email>big.pimpin@gmail.com</email>
+    <picture location="../files/picture"></picture>
+
+</userProfile>

@@ -8,11 +8,26 @@
 
 <driversLicense status="suspended">
     <number>12345</number>
-    <firstName>Tom</firstName>
+    <!-- certain characters cannot be uses in the   -->
+    <firstName>Tom&lt;Mitchell</firstName>
     <lastName>Mitchell</lastName>
     <dateOfBirth>08/05/1983</dateOfBirth>
     <vehicleType>Car</vehicleType>
     <dateOfIssue>01/01/2016</dateOfIssue>
     <dateOfExpiry>01/01/2026</dateOfExpiry>
     <photo location="servername/filename"></photo>
+    <![CDATA[
+        This is CDATA.  Any thing within these brackets will be treated as regular text and not markup.
+    ]]>
+    <address>
+        <street>Pine St.</street>
+        <city>Manchester</city>
+        <state>CT</state>
+        <country>USA</country>
+        <zipCode>06040</zipCode>
+    </address>
+
 </driversLicense>
+
+
+
