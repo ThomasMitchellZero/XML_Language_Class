@@ -12,6 +12,19 @@
     elementFormDefault - no idea.
     -->
 <schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="www.someURL.com/somewhere" xmlns:tns="www.someURL.com/somewhere" elementFormDefault="qualified">
+    <!--this <xs:element> thing popped up automatically.  From where?-->
+    <xs:element name="Patient">
 
+        <!--  Apparantly you cannot just start dropping elements inside a complex type.  Everythign has to be inside a sequence or some other data type.  NSWTM.  -->
+        <xs:complexType name="Patient">
+            <!--Sequence ensures that any elements we define in this complex type will occur in the exact order we are about to specify. -->
+            <xs:sequence>
+
+
+            </xs:sequence>
+
+        </xs:complexType>
+
+    </xs:element>
 
 </schema>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+    xlmns attribute defines the root namespace for this schema.  Every child element of <schema> will belong to this namespace.  Not sure what the :xs suffix is for.
+
+    the suffix might be like the variable name you use to represent the URL stored in the attribute, like setting a variable?
+    
+    targetNamespace attribute - not sure what this is for.
+    
+    xmlns:tns - I think this lets us define our target namespace so we don't have to keep writing it?  Not sure. But the instructor said the :tns can be anything we want, so that supports the 'variable' convention I was considering earlier.
+    
+    elementFormDefault - no idea.
+    -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Patient" xmlns:tns="http://www.example.org/Patient" elementFormDefault="qualified">
+
+<!--this part here is kind of fucked.  Pick it up next time-->
+
+
+</schema>
