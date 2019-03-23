@@ -11,9 +11,25 @@
     
     elementFormDefault - no idea.
     -->
-<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Patient" xmlns:tns="http://www.example.org/Patient" elementFormDefault="qualified">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wavetech.org/Patient" xmlns:tns="http://www.wavetech.org/Patient" elementFormDefault="qualified">
+    
+    <!--I mistakenly put the complexType INSIDE the <element> tags and got errors.  Not sure why, but the complex type needs to be outside.-->
+    <element name="Patient" type="tns:Patient"></element>
+        
+    <complexType name="Patient">
+            
+        <!--Using a sequence mandates that any elements that occurr in this complex type should be used in the same order.-->
+        <sequence>
+            <element name="name" type="string"></element>
+            <element name="age" type="int"></element>
+            <element name="email" type="string"></element>
+            <element name="gender" type="string"></element>
+            <element name="phone" type="string"></element>    
 
-<!--this part here is kind of fucked.  Pick it up next time-->
+        </sequence>
+
+    </complexType>
+
 
 
 </schema>
