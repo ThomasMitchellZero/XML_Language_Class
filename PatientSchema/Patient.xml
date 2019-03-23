@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tns:Patient xmlns:tns="http://www.wavetech.org/Patient" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wavetech.org/Patient Patient.xsd ">
+
+<!--This name is generated from the name attribute of the original <element> of the .xsd file. 
+    
+    the xmlns:xsi=  points to an external library that makes the xsi:schemaLocation= attribute available to us.  Delete this attribute and we get an error.
+    
+    xsi:schemaLocation=  points to the location of the schema file used to validate this XML.  (but how does it work if this isn't an actual URL?)
+     -->
+<tns:Patient xmlns:tns="http://www.wavetech.org/Patient" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.wavetech.org/Patient Patient.xsd ">
   <tns:name>tns:name</tns:name>
   <tns:age>0</tns:age>
   <tns:email>tns:email</tns:email>

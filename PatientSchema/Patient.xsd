@@ -13,7 +13,9 @@
     -->
 <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.wavetech.org/Patient" xmlns:tns="http://www.wavetech.org/Patient" elementFormDefault="qualified">
     
-    <!--I mistakenly put the complexType INSIDE the <element> tags and got errors.  Not sure why, but the complex type needs to be outside.-->
+    <!--I mistakenly put the complexType INSIDE the <element> tags and got errors.  Not sure why, but the complex type needs to be outside.
+        
+    element name=  is what elements created from this schema will be called.  The   type="tns:xxx"   attribute needs to match complexType name="xxx" if the new documents created from this schema are to have the sequence of elements I just defined.-->
     <element name="Patient" type="tns:Patient"></element>
         
     <complexType name="Patient">
