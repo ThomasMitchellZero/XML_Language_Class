@@ -22,15 +22,30 @@
             
         <!--Using a sequence mandates that any elements that occurr in this complex type should be used in the same order.-->
         <sequence>
-            <element name="name" type="string"></element>
+            <!-- Looks like the type is how you choose what restrictions apply to an element?-->
+            <element name="name" type="tns:String15Chars"></element>
             <element name="age" type="int"></element>
             <element name="email" type="string"></element>
-            <element name="gender" type="string"></element>
+            <element name="gender" type="tns:Gender"></element>
             <element name="phone" type="string"></element>    
 
         </sequence>
 
     </complexType>
+
+    <!--simpleType can be used to add in constraints about what can and cannot be allowed in an attribute.-->
+    <simpleType name="String15Chars">
+        <restriction base="string">
+            <maxLength value="15"></maxLength>
+
+        </restriction>
+    </simpleType>
+    <simpleType name="Gender">
+        <restriction base="string">
+            <enumeration value="M"></enumeration>
+            <enumeration value="F"></enumeration>
+        </restriction>
+    </simpleType>
 
 
 
