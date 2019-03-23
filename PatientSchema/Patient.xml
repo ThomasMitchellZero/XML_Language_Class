@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!--This name is generated from the name attribute of the original <element> of the .xsd file. 
     
     the xmlns:xsi=  points to an external library that makes the xsi:schemaLocation= attribute available to us.  Delete this attribute and we get an error.
     
-    xsi:schemaLocation=  points to the location of the schema file used to validate this XML.  (but how does it work if this isn't an actual URL?)
-     -->
-<tns:Patient xmlns:tns="http://www.wavetech.org/Patient" 
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://www.wavetech.org/Patient Patient.xsd ">
-  <tns:name>tns:name</tns:name>
-  <tns:age>0</tns:age>
-  <tns:email>tns:email</tns:email>
-  <tns:gender>tns:gender</tns:gender>
-  <tns:phone>tns:phone</tns:phone>
+    xsi:schemaLocation=  points to the location of the schema file used to validate this XML.  Convention is the namespace, followed by a space, followed by the file name.  If you have a remote URL, you can instead point it at that URL here.
+-->
+<tns:Patient
+        xmlns:tns="http://www.wavetech.org/Patient"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.wavetech.org/Patient Patient.xsd ">
+    <tns:name>tom</tns:name>
+    <tns:age>35</tns:age>
+    <tns:email>thomas.mitchell.13@gmail.com</tns:email>
+    <tns:gender>M</tns:gender>
+    <tns:phone>123-456-7890</tns:phone>
 </tns:Patient>
