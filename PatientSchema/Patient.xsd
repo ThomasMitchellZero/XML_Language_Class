@@ -28,9 +28,25 @@
             <element name="email" type="string"></element>
             <element name="gender" type="tns:Gender"></element>
             <element name="phone" type="string"></element>    
-
+            <element name="payType" type="tns:PaymentType"></element>
         </sequence>
 
+    </complexType>
+
+    <complexType name="paymentType">
+        <choice>
+            <element name="cash" type ="decimal"></element>
+            <element name="insurance" type ="tns:Insurance"></element>
+        </choice>
+
+    </complexType>
+
+    <complexType name="Inasurance">
+        <all>
+            <element name="provider" type="string"></element>
+            <element name="limit" type="decimal"></element>
+
+        </all>
     </complexType>
 
     <!--simpleType can be used to add in constraints about what can and cannot be allowed in an attribute.-->
