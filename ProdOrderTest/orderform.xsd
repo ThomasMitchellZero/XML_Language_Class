@@ -6,10 +6,10 @@ elementFormDefault="qualified">
     <element name="orderform" type="tns:orderform"></element>
     <complexType name="orderform">
         <sequence>
-            <element name="name" type="string"></element>
-            <element name="description" type="string"></element>
-            <element name="price" type="string"></element>
-            <element name="category" type="string"></element>
+            <element name="name" type="tns:char20"></element>
+            <element name="description" type="tns:char100"></element>
+            <element name="price" type="int"></element>
+            <element name="category" type="tns:Category"></element>
         </sequence>
     </complexType>
     <simpleType name="char20">
