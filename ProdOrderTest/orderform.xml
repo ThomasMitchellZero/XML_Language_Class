@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:orderform xmlns:tns="http://www.example.org/orderform" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.example.org/orderform orderform.xsd ">
+  <tns:name>tns:name</tns:name>
+  <tns:description>tns:description</tns:description>
+  <tns:price>cat</tns:price>
+  <tns:category>boorrks</tns:category>
+</tns:orderform>

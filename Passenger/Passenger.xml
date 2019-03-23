@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<tns:Passenger xmlns:tns="http://www.wavetech.com/Passenger" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wavetech.com/Passenger Passenger.xsd ">
-  <tns:name>tns:name</tns:name>
-  <tns:dob>2001-01-01</tns:dob>
-  <tns:seatNo>0</tns:seatNo>
-  <tns:gender>tns:gender</tns:gender>
-</tns:Passenger>

@@ -3,7 +3,31 @@
 targetNamespace="http://www.example.org/orderform" 
 xmlns:tns="http://www.example.org/orderform" 
 elementFormDefault="qualified">
-    <element name="orderform"></element>
-    
+    <element name="orderform" type="tns:orderform"></element>
+    <complexType name="orderform">
+        <sequence>
+            <element name="name" type="string"></element>
+            <element name="description" type="string"></element>
+            <element name="price" type="string"></element>
+            <element name="category" type="string"></element>
+        </sequence>
+    </complexType>
+    <simpleType name="char20">
+        <restriction base="string">
+            <maxLength value="20"></maxLength>
+        </restriction>
+    </simpleType>
+    <simpleType name="char100">
+        <restriction base="string">
+            <maxLength value="100"></maxLength>
+        </restriction>
+    </simpleType>
+    <simpleType name="Category">
+        <restriction base="string">
+            <enumeration value="electronics"></enumeration>
+            <enumeration value="books"></enumeration>
+            <enumeration value="shoes"></enumeration>
+        </restriction>
+    </simpleType>
 
 </schema>
